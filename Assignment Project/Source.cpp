@@ -1,13 +1,12 @@
-#include <Windows.h>
-#include <gl/GL.h>
-#include <gl/GLU.h>
+#include <Windows.h> //window class
+#include <gl/GL.h> //openGL class
+#include <gl/GLU.h> //GLU class
 
 #pragma comment (lib, "OpenGL32.lib")
 #pragma comment (lib, "GLU32.lib")
-#define WINDOW_TITLE "Assignment Robot"
 
-
-
+#define WINDOW_TITLE "Assignment_Robot"
+//ganchanhengasdasdasd
 LRESULT WINAPI WindowProcedure(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 {
 	switch (msg)
@@ -17,8 +16,7 @@ LRESULT WINAPI WindowProcedure(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam
 		break;
 
 	case WM_KEYDOWN:
-		if (wParam == VK_ESCAPE)
-			PostQuitMessage(0);
+		if (wParam == VK_ESCAPE)PostQuitMessage(0);
 		break;
 
 	default:
@@ -61,38 +59,11 @@ bool initPixelFormat(HDC hdc)
 }
 //--------------------------------------------------------------------
 
-void drawSphere(float r) {
-	GLUquadricObj* sphere = NULL;			// Create a quadric obj pointer
-	sphere = gluNewQuadric();				// Create a quadric obj 
-	gluQuadricDrawStyle(sphere, GLU_FILL);	// Set to drawstyle to sphere
-	gluSphere(sphere, r, 30, 30);			// Draw sphere
-	gluDeleteQuadric(sphere);
-}
-
-void drawCylinder(float br, float tr, float h, int slices, int stacks) {
-	GLUquadricObj* cylinder = NULL;									// Create a quadric obj pointer
-	cylinder = gluNewQuadric();										// Create a quadric obj 
-	gluQuadricDrawStyle(cylinder, GLU_FILL);						// Set to drawstyle to cylinder
-	gluCylinder(cylinder, br, tr, h, slices, stacks);				// Draw cylinder
-	gluDeleteQuadric(cylinder);
-}
-
-void drawCone(float tr, float h, int slices, int stacks) {
-	GLUquadricObj* cylinder = NULL;									// Create a quadric obj pointer
-	cylinder = gluNewQuadric();										// Create a quadric obj 
-	gluQuadricDrawStyle(cylinder, GLU_FILL);						// Set to drawstyle to cone
-	gluCylinder(cylinder, 0, tr, h, slices, stacks);				// Draw cone
-	gluDeleteQuadric(cylinder);
-}
-
 void display()
 {
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	glEnable(GL_DEPTH_TEST);
-
 
 }
-//--------------------------------------------------------------------
+
 
 int WINAPI WinMain(HINSTANCE hInst, HINSTANCE, LPSTR, int nCmdShow)
 {
@@ -112,28 +83,38 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE, LPSTR, int nCmdShow)
 		NULL, NULL, wc.hInstance, NULL);
 
 	//--------------------------------
-	//	Initialize window for OpenGL
+	// Initialize window for OpenGL
 	//--------------------------------
 
 	HDC hdc = GetDC(hWnd);
 
-	//	initialize pixel format for the window
+	// initialize pixel format for the window
 	initPixelFormat(hdc);
 
-	//	get an openGL context
+	// get an openGL context
 	HGLRC hglrc = wglCreateContext(hdc);
 
-	//	make context current
+	// make context current
 	if (!wglMakeCurrent(hdc, hglrc)) return false;
 
 	//--------------------------------
-	//	End initialization
+	// End initialization
 	//--------------------------------
 
 	ShowWindow(hWnd, nCmdShow);
 
 	MSG msg;
 	ZeroMemory(&msg, sizeof(msg));
+
+	glMatrixMode(GL_PROJECTION); // refer to projection matrix
+	glLoadIdentity(); // reset the projection matrix
+
+	// Ortho view
+	//glOrtho(-10.0, 10.0, -10.0, 10.0, -10.0, 10.0);
+
+	//Prespective view
+	gluPerspective(20, 1.0, -1.0, 1.0);
+	glFrustum(-10.0, 10.0, -10.0, 10.0, 1.0, 21.0);
 
 	while (true)
 	{
