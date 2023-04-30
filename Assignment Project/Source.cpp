@@ -61,9 +61,34 @@ bool initPixelFormat(HDC hdc)
 }
 //--------------------------------------------------------------------
 
+void drawSphere(float r) {
+	GLUquadricObj* sphere = NULL;			// Create a quadric obj pointer
+	sphere = gluNewQuadric();				// Create a quadric obj 
+	gluQuadricDrawStyle(sphere, GLU_FILL);	// Set to drawstyle to sphere
+	gluSphere(sphere, r, 30, 30);			// Draw sphere
+	gluDeleteQuadric(sphere);
+}
+
+void drawCylinder(float br, float tr, float h, int slices, int stacks) {
+	GLUquadricObj* cylinder = NULL;				// Create a quadric obj pointer
+	cylinder = gluNewQuadric();					// Create a quadric obj 
+	gluQuadricDrawStyle(cylinder, GLU_FILL);	// Set to drawstyle to cylinder
+	gluCylinder(cylinder, br, tr, h, slices, stacks);				// Draw cylinder
+	gluDeleteQuadric(cylinder);
+}
+
+void drawCone(float tr, float h, int slices, int stacks) {
+	GLUquadricObj* cylinder = NULL;				// Create a quadric obj pointer
+	cylinder = gluNewQuadric();					// Create a quadric obj 
+	gluQuadricDrawStyle(cylinder, GLU_FILL);	// Set to drawstyle to cone
+	gluCylinder(cylinder, 0, tr, h, slices, stacks);				// Draw cone
+	gluDeleteQuadric(cylinder);
+}
+
 void display()
 {
-
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	glEnable(GL_DEPTH_TEST);
 
 
 }
