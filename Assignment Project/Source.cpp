@@ -70,17 +70,17 @@ void drawSphere(float r) {
 }
 
 void drawCylinder(float br, float tr, float h, int slices, int stacks) {
-	GLUquadricObj* cylinder = NULL;				// Create a quadric obj pointer
-	cylinder = gluNewQuadric();					// Create a quadric obj 
-	gluQuadricDrawStyle(cylinder, GLU_FILL);	// Set to drawstyle to cylinder
+	GLUquadricObj* cylinder = NULL;									// Create a quadric obj pointer
+	cylinder = gluNewQuadric();										// Create a quadric obj 
+	gluQuadricDrawStyle(cylinder, GLU_FILL);						// Set to drawstyle to cylinder
 	gluCylinder(cylinder, br, tr, h, slices, stacks);				// Draw cylinder
 	gluDeleteQuadric(cylinder);
 }
 
 void drawCone(float tr, float h, int slices, int stacks) {
-	GLUquadricObj* cylinder = NULL;				// Create a quadric obj pointer
-	cylinder = gluNewQuadric();					// Create a quadric obj 
-	gluQuadricDrawStyle(cylinder, GLU_FILL);	// Set to drawstyle to cone
+	GLUquadricObj* cylinder = NULL;									// Create a quadric obj pointer
+	cylinder = gluNewQuadric();										// Create a quadric obj 
+	gluQuadricDrawStyle(cylinder, GLU_FILL);						// Set to drawstyle to cone
 	gluCylinder(cylinder, 0, tr, h, slices, stacks);				// Draw cone
 	gluDeleteQuadric(cylinder);
 }
