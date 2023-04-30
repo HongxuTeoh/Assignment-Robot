@@ -3,7 +3,8 @@
 #include <gl/GLU.h>
 
 #pragma comment (lib, "OpenGL32.lib")
-#define WINDOW_TITLE "OpenGL Window"
+#pragma comment (lib, "GLU32.lib")
+#define WINDOW_TITLE "Assignment Robot"
 
 
 
@@ -62,13 +63,9 @@ bool initPixelFormat(HDC hdc)
 
 void display()
 {
-	//--------------------------------
-	//	OpenGL drawing
-	//--------------------------------
 
-	//--------------------------------
-	//	End of OpenGL drawing
-	//--------------------------------
+
+
 }
 //--------------------------------------------------------------------
 
