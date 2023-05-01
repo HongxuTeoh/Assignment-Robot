@@ -6,7 +6,10 @@
 #pragma comment (lib, "GLU32.lib")
 
 #define WINDOW_TITLE "Assignment_Robot"
-//ganchanhengasdasdasd
+
+
+
+
 LRESULT WINAPI WindowProcedure(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 {
 	switch (msg)
