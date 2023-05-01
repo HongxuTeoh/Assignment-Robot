@@ -7,7 +7,7 @@
 
 #define WINDOW_TITLE "Assignment Robot"
 
-
+bool isOrtho = true;
 
 LRESULT WINAPI WindowProcedure(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 {
@@ -20,9 +20,13 @@ LRESULT WINAPI WindowProcedure(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam
 	case WM_KEYDOWN:
 		if (wParam == VK_ESCAPE)
 			PostQuitMessage(0);
+
+		else if (wParam == VK_CONTROL)
+			isOrtho = !isOrtho;
+
+
+
 		break;
-
-
 
 	default:
 		break;
@@ -65,10 +69,44 @@ bool initPixelFormat(HDC hdc)
 //--------------------------------------------------------------------
 
 void drawSphere(float r) {
-	GLUquadricObj* sphere = NULL;
-	sphere = gluNewQuadric();
-	gluSphere(sphere, r, 50, 50);
+	GLUquadricObj* sphere = NULL;			// Create a quadric obj pointer
+	sphere = gluNewQuadric();				// Create a quadric obj 
+	gluQuadricDrawStyle(sphere, GLU_FILL);	// Set to draw style to sphere
+	gluSphere(sphere, r, 50, 50);		// Draw sphere
 	gluDeleteQuadric(sphere);
+}
+
+void drawCylinder(float br, float tr, float h) {
+	GLUquadricObj* cylinder = NULL;				// Create a quadric obj pointer
+	cylinder = gluNewQuadric();					// Create a quadric obj 
+	gluQuadricDrawStyle(cylinder, GLU_FILL);	// Set to draw style to cylinder
+	gluCylinder(cylinder, br, tr, h, 30, 30);			// Draw cylinder
+	gluDeleteQuadric(cylinder);
+}
+
+void drawCone(float tr, float h) {
+	GLUquadricObj* cylinder = NULL;				// Create a quadric obj pointer
+	cylinder = gluNewQuadric();					// Create a quadric obj 
+	gluQuadricDrawStyle(cylinder, GLU_FILL);	// Set to draw style to cone
+	gluCylinder(cylinder, 0, tr, h, 30, 30);				// Draw cone
+	gluDeleteQuadric(cylinder);
+}
+
+void projection() {
+	glMatrixMode(GL_PROJECTION);		// refer to projection matrix
+	glLoadIdentity();					// reset the projection matrix
+	//glTranslatef(ptx, pty, 0.0);		// translate the projection
+	//glRotatef(pry, 0.0, 1.0, 0.0);		// rotation in y for projection
+
+	if (isOrtho) {
+		//Orthographic view
+		glOrtho(-10.0, 10.0, -10.0, 10.0, -10, 10);
+	}
+	else {
+		//Perspective view
+		gluPerspective(30.0, 1.0, -10, 10.0);
+		glFrustum(-10.0, 10.0, -10.0, 10.0, -10.0, 10);
+	}
 }
 
 
@@ -76,6 +114,10 @@ void display()
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glEnable(GL_DEPTH_TEST);
+
+	projection();
+
+	glMatrixMode(GL_MODELVIEW);
 
 
 }
