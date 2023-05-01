@@ -1,12 +1,11 @@
-#include <Windows.h> //window class
-#include <gl/GL.h> //openGL class
-#include <gl/GLU.h> //GLU class
+#include <Windows.h>
+#include <gl/GL.h>
+#include <gl/GLU.h>
 
 #pragma comment (lib, "OpenGL32.lib")
 #pragma comment (lib, "GLU32.lib")
 
-#define WINDOW_TITLE "Assignment_Robot"
-
+#define WINDOW_TITLE "Assignment Robot"
 
 
 
@@ -19,8 +18,11 @@ LRESULT WINAPI WindowProcedure(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam
 		break;
 
 	case WM_KEYDOWN:
-		if (wParam == VK_ESCAPE)PostQuitMessage(0);
+		if (wParam == VK_ESCAPE)
+			PostQuitMessage(0);
 		break;
+
+
 
 	default:
 		break;
@@ -50,7 +52,7 @@ bool initPixelFormat(HDC hdc)
 	// choose pixel format returns the number most similar pixel format available
 	int n = ChoosePixelFormat(hdc, &pfd);
 
-	// set pixel format returns whether it sucessfully set the pixel format
+	// set pixel format returns whether it successfully set the pixel format
 	if (SetPixelFormat(hdc, n, &pfd))
 	{
 		return true;
@@ -62,11 +64,22 @@ bool initPixelFormat(HDC hdc)
 }
 //--------------------------------------------------------------------
 
-void display()
-{
-
+void drawSphere(float r) {
+	GLUquadricObj* sphere = NULL;
+	sphere = gluNewQuadric();
+	gluSphere(sphere, r, 50, 50);
+	gluDeleteQuadric(sphere);
 }
 
+
+void display()
+{
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	glEnable(GL_DEPTH_TEST);
+
+
+}
+//--------------------------------------------------------------------
 
 int WINAPI WinMain(HINSTANCE hInst, HINSTANCE, LPSTR, int nCmdShow)
 {
@@ -86,38 +99,28 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE, LPSTR, int nCmdShow)
 		NULL, NULL, wc.hInstance, NULL);
 
 	//--------------------------------
-	// Initialize window for OpenGL
+	//	Initialize window for OpenGL
 	//--------------------------------
 
 	HDC hdc = GetDC(hWnd);
 
-	// initialize pixel format for the window
+	//	initialize pixel format for the window
 	initPixelFormat(hdc);
 
-	// get an openGL context
+	//	get an openGL context
 	HGLRC hglrc = wglCreateContext(hdc);
 
-	// make context current
+	//	make context current
 	if (!wglMakeCurrent(hdc, hglrc)) return false;
 
 	//--------------------------------
-	// End initialization
+	//	End initialization
 	//--------------------------------
 
 	ShowWindow(hWnd, nCmdShow);
 
 	MSG msg;
 	ZeroMemory(&msg, sizeof(msg));
-
-	glMatrixMode(GL_PROJECTION); // refer to projection matrix
-	glLoadIdentity(); // reset the projection matrix
-
-	// Ortho view
-	//glOrtho(-10.0, 10.0, -10.0, 10.0, -10.0, 10.0);
-
-	//Prespective view
-	gluPerspective(20, 1.0, -1.0, 1.0);
-	glFrustum(-10.0, 10.0, -10.0, 10.0, 1.0, 21.0);
 
 	while (true)
 	{
