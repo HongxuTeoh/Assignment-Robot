@@ -100,12 +100,12 @@ void projection() {
 
 	if (isOrtho) {
 		//Orthographic view
-		glOrtho(-10.0, 10.0, -10.0, 10.0, -10, 10);
+		glOrtho(-5.0, 5.0, -5.0, 5.0, -5.0, 5.0);
 	}
 	else {
 		//Perspective view
-		gluPerspective(30.0, 1.0, -10, 10.0);
-		glFrustum(-10.0, 10.0, -10.0, 10.0, -10.0, 10);
+		gluPerspective(30.0, 1.0, -5.0, 5.0);
+		glFrustum(-5.0, 5.0, -5.0, 5.0, -5.0, 5.0);
 	}
 }
 
