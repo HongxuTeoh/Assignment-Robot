@@ -21,7 +21,7 @@ LRESULT WINAPI WindowProcedure(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam
 		if (wParam == VK_ESCAPE)
 			PostQuitMessage(0);
 
-		else if (wParam == VK_CONTROL)
+		else if (wParam == VK_SPACE)
 			isOrtho = !isOrtho;
 
 
@@ -109,6 +109,63 @@ void projection() {
 	}
 }
 
+// robot head
+void head() {
+
+}
+
+// robot body
+void body() {
+	glBegin(GL_QUADS);		// chest
+	glColor3f(1.0, 1.0, 1.0);
+		//top
+		glVertex3f(1.0, 2.5, 1.0);
+		glVertex3f(1.0, 2.5, -1.0);
+		glVertex3f(-1.0, 2.5, -1.0);
+		glVertex3f(-1.0, 2.5, 1.0);
+
+		//bottom
+		glVertex3f(1.0, 1.5, 1.0);
+		glVertex3f(1.0, 1.5, -1.0);
+		glVertex3f(-1.0, 1.5, -1.0);
+		glVertex3f(-1.0, 1.5, 1.0);
+
+		//front
+		glVertex3f(-1.0, 2.5, 1.0);
+		glVertex3f(1.0, 2.5, 1.0);
+		glVertex3f(1.0, 1.5, 1.0);
+		glVertex3f(-1.0, 1.5, 1.0);
+
+		//back
+		glVertex3f(-1.0, 2.5, -1.0);
+		glVertex3f(1.0, 2.5, -1.0);
+		glVertex3f(1.0, 1.5, -1.0);
+		glVertex3f(-1.0, 1.5, -1.0);
+
+		//left
+		glVertex3f(-1.0, 2.5, -1.0);
+		glVertex3f(-1.0, 2.5, 1.0);
+		glVertex3f(-1.0, 1.5, 1.0);
+		glVertex3f(-1.0, 1.5, -1.0);
+
+		//right
+		glVertex3f(1.0, 2.5, 1.0);
+		glVertex3f(1.0, 2.5, -1.0);
+		glVertex3f(1.0, 1.5, -1.0);
+		glVertex3f(1.0, 1.5, 1.0);
+	glEnd();
+
+	glBegin(GL_QUADS);		// belly
+	glColor3f(1.0, 1.0, 1.0);
+		//top
+		glVertex3f(0.75, 1.5, 0.75);
+		glVertex3f(0.75, 1.5, -0.75);
+		glVertex3f(-0.75, 1.5, -0.75);
+		glVertex3f(-0.75, 1.5, 0.75);
+
+		//bottom
+		
+}
 
 void display()
 {
