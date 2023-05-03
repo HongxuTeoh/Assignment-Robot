@@ -116,7 +116,7 @@ void head() {
 
 // robot body
 void body() {
-	glBegin(GL_QUADS);		// chest
+	glBegin(GL_QUADS);		// shoulder
 	glColor3f(1.0, 1.0, 1.0);
 		//top
 		glVertex3f(1.0, 2.5, 1.0);
@@ -154,16 +154,6 @@ void body() {
 		glVertex3f(1.0, 1.5, -1.0);
 		glVertex3f(1.0, 1.5, 1.0);
 	glEnd();
-
-	glBegin(GL_QUADS);		// belly
-	glColor3f(1.0, 1.0, 1.0);
-		//top
-		glVertex3f(0.75, 1.5, 0.75);
-		glVertex3f(0.75, 1.5, -0.75);
-		glVertex3f(-0.75, 1.5, -0.75);
-		glVertex3f(-0.75, 1.5, 0.75);
-
-		//bottom
 
 
 		
