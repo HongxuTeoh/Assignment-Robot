@@ -109,14 +109,14 @@ void projection() {
 	}
 }
 
-// robot head
+// robot head and neck
 void head() {
 
 }
 
 // robot body
 void body() {
-	glBegin(GL_QUADS);		// shoulder
+	glBegin(GL_QUADS);		// shoulder (not complete yet
 	glColor3f(1.0, 1.0, 1.0);
 		//top
 		glVertex3f(1.0, 2.5, 1.0);
@@ -155,8 +155,59 @@ void body() {
 		glVertex3f(1.0, 1.5, 1.0);
 	glEnd();
 
-
+	glBegin(GL_QUADS);		//index finger
+	glColor3f(1.0, 1.0, 1.0);
+		//1st
 		
+
+
+
+	glEnd();
+		
+}
+
+void hand() {
+	glBegin(GL_QUADS);		// just random pick the points to write, after need to rotate/translate/scaled
+	glColor3f(1.0, 1.0, 1.0);
+		//bottom
+		glVertex3f(0.0, 0.0, 0.0);
+		glVertex3f(0.0, 0.0, 1.2);
+		glVertex3f(1.0, 0.0, 1.2);
+		glVertex3f(1.0, 0.0, 0.0);
+
+		//top
+		glVertex3f(0.0, 0.3, 0.0);
+		glVertex3f(0.0, 0.3, 1.2);
+		glVertex3f(1.0, 0.3, 1.2);
+		glVertex3f(1.0, 0.3, 1.2);
+
+		//near (x axis = 0)
+		glVertex3f(0.0, 0.0, 0.0);
+		glVertex3f(0.0, 0.0, 1.2);
+		glVertex3f(0.0, 0.3, 1.2);
+		glVertex3f(0.0, 0.3, 0.0);
+
+		//far (x axis = 1)
+		glVertex3f(1.0, 0.0, 0.0);
+		glVertex3f(1.0, 0.0, 1.2);
+		glVertex3f(1.0, 0.3, 1.2);
+		glVertex3f(1.0, 0.3, 0.0);
+
+		//left (z axis = 0)
+		glVertex3f(0.0, 0.0, 0.0);
+		glVertex3f(1.0, 0.0, 0.0);
+		glVertex3f(1.0, 0.3, 0.0);
+		glVertex3f(0.0, 0.3, 0.0);
+
+		//right (z axis = 1.2)
+		glVertex3f(0.0, 0.0, 1.2);
+		glVertex3f(1.0, 0.0, 1.2);
+		glVertex3f(1.0, 0.3, 1.2);
+		glVertex3f(0.0, 0.3, 1.2);
+	
+	glEnd();
+
+
 }
 
 void display()
@@ -168,6 +219,7 @@ void display()
 
 	glMatrixMode(GL_MODELVIEW);
 
+	hand();
 
 }
 //--------------------------------------------------------------------
