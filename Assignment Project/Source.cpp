@@ -203,15 +203,34 @@ void hand() {
 }
 
 void finger() {
-	glBegin(GL_QUADS);		//index finger
+	glBegin(GL_QUADS);		//bottom finger
 	glColor3f(1.0, 1.0, 1.0);
 		//bottom
 		glVertex3f(1.0, 0.0, 1.2);
 		glVertex3f(1.3, 0.0, 1.2);
-		glVertex3f(1.3, 0.0, 1.2 - 0.3);
-		glVertex3f(1.0, 0.0, 1.2 - 0.3);
+		glVertex3f(1.3, 0.0, 0.9);
+		glVertex3f(1.0, 0.0, 0.9);
 
+		//top
+		glVertex3f(1.0, 0.3, 1.2);
+		glVertex3f(1.3, 0.3, 1.2);
+		glVertex3f(1.3, 0.3, 0.9);
+		glVertex3f(1.0, 0.3, 0.9);
 
+		//near (x axis = 1)
+		glVertex3f(1.0, 0.0, 1.2);
+		glVertex3f(1.0, 0.3, 1.2);
+		glVertex3f(1.0, 0.3, 0.9);
+		glVertex3f(1.0, 0.0, 0.9);
+
+		//far (x axis = 1 + 0.3)
+		glVertex3f(1.3, 0.0, 1.2);
+		glVertex3f(1.3, 0.3, 1.2);
+		glVertex3f(1.3, 0.3, 0.9);
+		glVertex3f(1.2, 0.0, 0.9);
+
+		//left (z axis = 1.2 - 0.3)
+		glVertex3f(1.0, 0.0, 0.9);
 
 
 	glEnd();
