@@ -154,15 +154,6 @@ void body() {
 		glVertex3f(1.0, 1.5, -1.0);
 		glVertex3f(1.0, 1.5, 1.0);
 	glEnd();
-
-	glBegin(GL_QUADS);		//index finger
-	glColor3f(1.0, 1.0, 1.0);
-		//1st
-		
-
-
-
-	glEnd();
 		
 }
 
@@ -207,7 +198,23 @@ void hand() {
 	
 	glEnd();
 
+	finger();		//index finger
 
+}
+
+void finger() {
+	glBegin(GL_QUADS);		//index finger
+	glColor3f(1.0, 1.0, 1.0);
+		//bottom
+		glVertex3f(1.0, 0.0, 1.2);
+		glVertex3f(1.3, 0.0, 1.2);
+		glVertex3f(1.3, 0.0, 1.2 - 0.3);
+		glVertex3f(1.0, 0.0, 1.2 - 0.3);
+
+
+
+
+	glEnd();
 }
 
 void display()
