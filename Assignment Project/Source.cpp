@@ -100,7 +100,7 @@ void projection() {
 
 	if (isOrtho) {
 		//Orthographic view
-		glOrtho(-5.0, 5.0, -5.0, 5.0, -5.0, 5.0);
+		glOrtho(-5.0, 5.0, -5.0, 5.0, 5.0, -5.0);
 	}
 	else {
 		//Perspective view
@@ -110,7 +110,7 @@ void projection() {
 }
 
 // robot head and neck
-void Head() {
+void head() {
 	glColor3ub(128, 128, 128);	//GREY COLOR
 	glBegin(GL_POLYGON);		//FRONT FACE
 	glVertex3f(0, 0, 0);
@@ -430,10 +430,10 @@ void Head() {
 	glEnd();
 
 	glBegin(GL_POLYGON);		//SECOND FRONT NECK
-	glVertex3f(0.15, -0.03, 0.05);
-	glVertex3f(0.25, -0.03, 0.05);
-	glVertex3f(0.25, -0.06, 0.05);
-	glVertex3f(0.15, -0.06, 0.05);
+	glVertex3f(0.15, -0.03, 0.1);
+	glVertex3f(0.25, -0.03, 0.1);
+	glVertex3f(0.25, -0.06, 0.1);
+	glVertex3f(0.15, -0.06, 0.1);
 	glEnd();
 
 	glBegin(GL_POLYGON);		//FIRST BACK NECK
@@ -444,177 +444,286 @@ void Head() {
 	glEnd();
 
 	glBegin(GL_POLYGON);		//SECOND BACK NECK
-	glVertex3f(0.15, -0.03, 0.25);
-	glVertex3f(0.25, -0.03, 0.25);
-	glVertex3f(0.25, -0.06, 0.25);
-	glVertex3f(0.15, -0.06, 0.25);
+	glVertex3f(0.15, -0.03, 0.2);
+	glVertex3f(0.25, -0.03, 0.2);
+	glVertex3f(0.25, -0.06, 0.2);
+	glVertex3f(0.15, -0.06, 0.2);
+	glEnd();
+
+	glBegin(GL_POLYGON);		//FIRST LEFT NECK
+	glVertex3f(0.1, 0, 0.05);
+	glVertex3f(0.1, -0.03, 0.05);
+	glVertex3f(0.1, -0.03, 0.25);
+	glVertex3f(0.1, 0, 0.25);
+	glEnd();
+
+	glBegin(GL_POLYGON);		//SECOND LEFT NECK
+	glVertex3f(0.15, -0.03, 0.1);
+	glVertex3f(0.15, -0.03, 0.2);
+	glVertex3f(0.15, -0.06, 0.2);
+	glVertex3f(0.15, -0.06, 0.1);
+	glEnd();
+
+	glBegin(GL_POLYGON);		//FIRST RIGHT NECK
+	glVertex3f(0.3, 0, 0.05);
+	glVertex3f(0.3, -0.03, 0.05);
+	glVertex3f(0.3, -0.03, 0.25);
+	glVertex3f(0.3, 0, 0.25);
+	glEnd();
+
+	glBegin(GL_POLYGON);		//SECOND RIGHT NECK
+	glVertex3f(0.25, -0.03, 0.1);
+	glVertex3f(0.25, -0.03, 0.2);
+	glVertex3f(0.25, -0.06, 0.2);
+	glVertex3f(0.25, -0.06, 0.1);
+	glEnd();
+
+	glBegin(GL_POLYGON);		//FIRST DOWN NECK
+	glVertex3f(0.1, -0.03, 0.05);
+	glVertex3f(0.3, -0.03, 0.05);
+	glVertex3f(0.3, -0.03, 0.25);
+	glVertex3f(0.1, -0.03, 0.25);
+	glEnd();
+
+	glBegin(GL_POLYGON);		//SECOND DOWN NECK
+	glVertex3f(0.15, -0.06, 0.1);
+	glVertex3f(0.25, -0.06, 0.1);
+	glVertex3f(0.25, -0.06, 0.2);
+	glVertex3f(0.15, -0.06, 0.2);
+	glEnd();
+
+	//NECK OUTLINE
+	glLineWidth(1.5);
+	glColor3f(0, 0, 0);
+	glBegin(GL_LINES);
+
+	glVertex3f(0.3, -0.03, 0.05);
+	glVertex3f(0.1, -0.03, 0.05);
+
+	glVertex3f(0.25, -0.06, 0.1);
+	glVertex3f(0.15, -0.06, 0.1);
+
+	glVertex3f(0.3, -0.03, 0.25);
+	glVertex3f(0.1, -0.03, 0.25);
+
+	glVertex3f(0.25, -0.06, 0.2);
+	glVertex3f(0.15, -0.06, 0.2);
+
+	glVertex3f(0.1, 0, 0.05);
+	glVertex3f(0.1, -0.03, 0.05);
+
+	glVertex3f(0.1, -0.03, 0.25);
+	glVertex3f(0.1, 0, 0.25);
+
+	glVertex3f(0.1, 0, 0.05);
+	glVertex3f(0.1, 0, 0.25);
+
+	glVertex3f(0.1, -0.03, 0.25);
+	glVertex3f(0.1, -0.03, 0.05);
+
+	glVertex3f(0.3, 0, 0.05);
+	glVertex3f(0.3, -0.03, 0.05);
+
+	glVertex3f(0.3, -0.03, 0.25);
+	glVertex3f(0.3, 0, 0.25);
+
+	glVertex3f(0.3, -0.03, 0.05);
+	glVertex3f(0.3, -0.03, 0.25);
+
+	glVertex3f(0.3, 0, 0.05);
+	glVertex3f(0.3, 0, 0.25);
+
+	glVertex3f(0.15, -0.03, 0.1);
+	glVertex3f(0.15, -0.03, 0.2);
+
+	glVertex3f(0.15, -0.06, 0.2);
+	glVertex3f(0.15, -0.06, 0.1);
+
+	glVertex3f(0.15, -0.06, 0.2);
+	glVertex3f(0.15, -0.03, 0.2);
+
+	glVertex3f(0.15, -0.03, 0.1);
+	glVertex3f(0.15, -0.06, 0.1);
+
+	glVertex3f(0.25, -0.03, 0.1);
+	glVertex3f(0.25, -0.03, 0.2);
+
+	glVertex3f(0.25, -0.06, 0.2);
+	glVertex3f(0.25, -0.06, 0.1);
+
+	glVertex3f(0.25, -0.06, 0.2);
+	glVertex3f(0.25, -0.03, 0.2);
+
+	glVertex3f(0.25, -0.03, 0.1);
+	glVertex3f(0.25, -0.06, 0.1);
+
 	glEnd();
 }
+
 
 // robot body
-void body() {
-	glBegin(GL_QUADS);		// shoulder (not complete yet
-	glColor3f(1.0, 1.0, 1.0);
-		//top
-		glVertex3f(1.0, 2.5, 1.0);
-		glVertex3f(1.0, 2.5, -1.0);
-		glVertex3f(-1.0, 2.5, -1.0);
-		glVertex3f(-1.0, 2.5, 1.0);
-
-		//bottom
-		glVertex3f(1.0, 1.5, 1.0);
-		glVertex3f(1.0, 1.5, -1.0);
-		glVertex3f(-1.0, 1.5, -1.0);
-		glVertex3f(-1.0, 1.5, 1.0);
-
-		//front
-		glVertex3f(-1.0, 2.5, 1.0);
-		glVertex3f(1.0, 2.5, 1.0);
-		glVertex3f(1.0, 1.5, 1.0);
-		glVertex3f(-1.0, 1.5, 1.0);
-
-		//back
-		glVertex3f(-1.0, 2.5, -1.0);
-		glVertex3f(1.0, 2.5, -1.0);
-		glVertex3f(1.0, 1.5, -1.0);
-		glVertex3f(-1.0, 1.5, -1.0);
-
-		//left
-		glVertex3f(-1.0, 2.5, -1.0);
-		glVertex3f(-1.0, 2.5, 1.0);
-		glVertex3f(-1.0, 1.5, 1.0);
-		glVertex3f(-1.0, 1.5, -1.0);
-
-		//right
-		glVertex3f(1.0, 2.5, 1.0);
-		glVertex3f(1.0, 2.5, -1.0);
-		glVertex3f(1.0, 1.5, -1.0);
-		glVertex3f(1.0, 1.5, 1.0);
-	glEnd();
-		
-}
-
-void hand() {
-	glBegin(GL_QUADS);		// just random pick the points to write, after need to rotate/translate/scaled
-	glColor3f(1.0, 1.0, 1.0);
-		//bottom
-		glVertex3f(0.0, 0.0, 0.0);
-		glVertex3f(0.0, 0.0, 1.2);
-		glVertex3f(1.0, 0.0, 1.2);
-		glVertex3f(1.0, 0.0, 0.0);
-
-		//top
-		glVertex3f(0.0, 0.3, 0.0);
-		glVertex3f(0.0, 0.3, 1.2);
-		glVertex3f(1.0, 0.3, 1.2);
-		glVertex3f(1.0, 0.3, 1.2);
-
-		//near (x axis = 0)
-		glVertex3f(0.0, 0.0, 0.0);
-		glVertex3f(0.0, 0.0, 1.2);
-		glVertex3f(0.0, 0.3, 1.2);
-		glVertex3f(0.0, 0.3, 0.0);
-
-		//far (x axis = 1)
-		glVertex3f(1.0, 0.0, 0.0);
-		glVertex3f(1.0, 0.0, 1.2);
-		glVertex3f(1.0, 0.3, 1.2);
-		glVertex3f(1.0, 0.3, 0.0);
-
-		//left (z axis = 0)
-		glVertex3f(0.0, 0.0, 0.0);
-		glVertex3f(1.0, 0.0, 0.0);
-		glVertex3f(1.0, 0.3, 0.0);
-		glVertex3f(0.0, 0.3, 0.0);
-
-		//right (z axis = 1.2)
-		glVertex3f(0.0, 0.0, 1.2);
-		glVertex3f(1.0, 0.0, 1.2);
-		glVertex3f(1.0, 0.3, 1.2);
-		glVertex3f(0.0, 0.3, 1.2);
-	glEnd();
-
-	firstFinger();		//(1st)index finger
-
-	secondFinger();		//(2nd)middle finger
-
-	thirdFinger();		//(3rd)ring finger
-
-	fourthFinger();		//(4th)little finger
-}
-
-void cubeFinger(float length, float height, float width) {
-	glBegin(GL_QUADS);		//bottom finger
-	glColor3f(1.0, 1.0, 1.0);
-	//bottom
-	glVertex3f(length, height - 0.3, width);
-	glVertex3f(length + 0.3, height - 0.3, width);
-	glVertex3f(length + 0.3, height - 0.3, width - 0.3);
-	glVertex3f(length, height - 0.3, width - 0.3);
-
-	//top
-	glVertex3f(length, height - 0.3 + 0.3, width);
-	glVertex3f(length + 0.3, height, width);
-	glVertex3f(length + 0.3, height, width - 0.3);
-	glVertex3f(length, height - 0.3 + 0.3, width - 0.3);
-
-	//near (x axis = length)
-	glVertex3f(length, height - 0.3, width);
-	glVertex3f(length, height, width);
-	glVertex3f(length, height, width - 0.3);
-	glVertex3f(length, height - 0.3, width - 0.3);
-
-	//far (x axis = length + 0.3)
-	glVertex3f(length + 0.3, height - 0.3, width);
-	glVertex3f(length + 0.3, height, width);
-	glVertex3f(length + 0.3, height, width - 0.3);
-	glVertex3f(length + 0.3, height - 0.3, width - 0.3);
-
-	//left (z axis = width - 0.3)
-	glVertex3f(length, height - 0.3, width - 0.3);
-	glVertex3f(length + 0.3, height - 0.3, width - 0.3);
-	glVertex3f(length + 0.3, height, width - 0.3);
-	glVertex3f(length, height, width - 0.3);
-
-	//right (z axis = width)
-	glVertex3f(length, height - 0.3, width);
-	glVertex3f(length + 0.3, height - 0.3, width);
-	glVertex3f(length + height, 0.3, width);
-	glVertex3f(length, height, width);
-	glEnd();
-}
-
-void firstFinger() {
-	cubeFinger(1.0, 0.3, 1.2);		//bottom finger
-
-	cubeFinger(1.3, 0.3, 1.2);		//middle finger
-
-	cubeFinger(1.6, 0.3, 1.2);		//top finger
-}
-
-void secondFinger() {
-	cubeFinger(1.0, 0.3, 0.9);		//bottom finger
-
-	cubeFinger(1.3, 0.3, 0.9);		//middle finger
-
-	cubeFinger(1.6, 0.3, 0.9);		//top finger
-}
-
-void thirdFinger() {
-	cubeFinger(1.0, 0.3, 0.6);		//bottom finger
-
-	cubeFinger(1.3, 0.3, 0.6);		//middle finger
-
-	cubeFinger(1.6, 0.3, 0.6);		//top finger
-}
-
-void fourthFinger() {
-	cubeFinger(1.0, 0.3, 0.3);		//bottom finger
-
-	cubeFinger(1.3, 0.3, 0.3);		//middle finger
-
-	cubeFinger(1.6, 0.3, 0.3);		//top finger
-}
+//void body() {
+//	glBegin(GL_QUADS);		// shoulder (not complete yet
+//	glColor3f(1.0, 1.0, 1.0);
+//		//top
+//		glVertex3f(1.0, 2.5, 1.0);
+//		glVertex3f(1.0, 2.5, -1.0);
+//		glVertex3f(-1.0, 2.5, -1.0);
+//		glVertex3f(-1.0, 2.5, 1.0);
+//
+//		//bottom
+//		glVertex3f(1.0, 1.5, 1.0);
+//		glVertex3f(1.0, 1.5, -1.0);
+//		glVertex3f(-1.0, 1.5, -1.0);
+//		glVertex3f(-1.0, 1.5, 1.0);
+//
+//		//front
+//		glVertex3f(-1.0, 2.5, 1.0);
+//		glVertex3f(1.0, 2.5, 1.0);
+//		glVertex3f(1.0, 1.5, 1.0);
+//		glVertex3f(-1.0, 1.5, 1.0);
+//
+//		//back
+//		glVertex3f(-1.0, 2.5, -1.0);
+//		glVertex3f(1.0, 2.5, -1.0);
+//		glVertex3f(1.0, 1.5, -1.0);
+//		glVertex3f(-1.0, 1.5, -1.0);
+//
+//		//left
+//		glVertex3f(-1.0, 2.5, -1.0);
+//		glVertex3f(-1.0, 2.5, 1.0);
+//		glVertex3f(-1.0, 1.5, 1.0);
+//		glVertex3f(-1.0, 1.5, -1.0);
+//
+//		//right
+//		glVertex3f(1.0, 2.5, 1.0);
+//		glVertex3f(1.0, 2.5, -1.0);
+//		glVertex3f(1.0, 1.5, -1.0);
+//		glVertex3f(1.0, 1.5, 1.0);
+//	glEnd();	
+//}
+//
+//void hand() {
+//	glBegin(GL_QUADS);		// need to rotate/translate/scaled
+//	glColor3f(1.0, 1.0, 1.0);
+//		//bottom
+//		glVertex3f(0.0, 0.0, 0.0);
+//		glVertex3f(0.0, 0.0, 1.2);
+//		glVertex3f(1.0, 0.0, 1.2);
+//		glVertex3f(1.0, 0.0, 0.0);
+//
+//		//top
+//		glVertex3f(0.0, 0.3, 0.0);
+//		glVertex3f(0.0, 0.3, 1.2);
+//		glVertex3f(1.0, 0.3, 1.2);
+//		glVertex3f(1.0, 0.3, 1.2);
+//
+//		//near (x axis = 0)
+//		glVertex3f(0.0, 0.0, 0.0);
+//		glVertex3f(0.0, 0.0, 1.2);
+//		glVertex3f(0.0, 0.3, 1.2);
+//		glVertex3f(0.0, 0.3, 0.0);
+//
+//		//far (x axis = 1)
+//		glVertex3f(1.0, 0.0, 0.0);
+//		glVertex3f(1.0, 0.0, 1.2);
+//		glVertex3f(1.0, 0.3, 1.2);
+//		glVertex3f(1.0, 0.3, 0.0);
+//
+//		//left (z axis = 0)
+//		glVertex3f(0.0, 0.0, 0.0);
+//		glVertex3f(1.0, 0.0, 0.0);
+//		glVertex3f(1.0, 0.3, 0.0);
+//		glVertex3f(0.0, 0.3, 0.0);
+//
+//		//right (z axis = 1.2)
+//		glVertex3f(0.0, 0.0, 1.2);
+//		glVertex3f(1.0, 0.0, 1.2);
+//		glVertex3f(1.0, 0.3, 1.2);
+//		glVertex3f(0.0, 0.3, 1.2);
+//	glEnd();
+//
+//	firstFinger();		//(1st)index finger
+//
+//	secondFinger();		//(2nd)middle finger
+//
+//	thirdFinger();		//(3rd)ring finger
+//
+//	fourthFinger();		//(4th)little finger
+//}
+//
+//void cubeFinger(float length, float height, float width) {
+//	glBegin(GL_QUADS);		//bottom finger
+//	glColor3f(1.0, 1.0, 1.0);
+//	//bottom
+//	glVertex3f(length, height - 0.3, width);
+//	glVertex3f(length + 0.3, height - 0.3, width);
+//	glVertex3f(length + 0.3, height - 0.3, width - 0.3);
+//	glVertex3f(length, height - 0.3, width - 0.3);
+//
+//	//top
+//	glVertex3f(length, height - 0.3 + 0.3, width);
+//	glVertex3f(length + 0.3, height, width);
+//	glVertex3f(length + 0.3, height, width - 0.3);
+//	glVertex3f(length, height - 0.3 + 0.3, width - 0.3);
+//
+//	//near (x axis = length)
+//	glVertex3f(length, height - 0.3, width);
+//	glVertex3f(length, height, width);
+//	glVertex3f(length, height, width - 0.3);
+//	glVertex3f(length, height - 0.3, width - 0.3);
+//
+//	//far (x axis = length + 0.3)
+//	glVertex3f(length + 0.3, height - 0.3, width);
+//	glVertex3f(length + 0.3, height, width);
+//	glVertex3f(length + 0.3, height, width - 0.3);
+//	glVertex3f(length + 0.3, height - 0.3, width - 0.3);
+//
+//	//left (z axis = width - 0.3)
+//	glVertex3f(length, height - 0.3, width - 0.3);
+//	glVertex3f(length + 0.3, height - 0.3, width - 0.3);
+//	glVertex3f(length + 0.3, height, width - 0.3);
+//	glVertex3f(length, height, width - 0.3);
+//
+//	//right (z axis = width)
+//	glVertex3f(length, height - 0.3, width);
+//	glVertex3f(length + 0.3, height - 0.3, width);
+//	glVertex3f(length + height, 0.3, width);
+//	glVertex3f(length, height, width);
+//	glEnd();
+//}
+//
+//void firstFinger() {
+//	cubeFinger(1.0, 0.3, 1.2);		//bottom finger
+//
+//	cubeFinger(1.3, 0.3, 1.2);		//middle finger
+//
+//	cubeFinger(1.6, 0.3, 1.2);		//top finger
+//}
+//
+//void secondFinger() {
+//	cubeFinger(1.0, 0.3, 0.9);		//bottom finger
+//
+//	cubeFinger(1.3, 0.3, 0.9);		//middle finger
+//
+//	cubeFinger(1.6, 0.3, 0.9);		//top finger
+//}
+//
+//void thirdFinger() {
+//	cubeFinger(1.0, 0.3, 0.6);		//bottom finger
+//
+//	cubeFinger(1.3, 0.3, 0.6);		//middle finger
+//
+//	cubeFinger(1.6, 0.3, 0.6);		//top finger
+//}
+//
+//void fourthFinger() {
+//	cubeFinger(1.0, 0.3, 0.3);		//bottom finger
+//
+//	cubeFinger(1.3, 0.3, 0.3);		//middle finger
+//
+//	cubeFinger(1.6, 0.3, 0.3);		//top finger
+//}
 
 void display()
 {
@@ -625,9 +734,12 @@ void display()
 
 	glMatrixMode(GL_MODELVIEW);
 
-	Head();
+	glPushMatrix();
+	glScaled(4.0, 4.0, 4.0);
+	head();
+	glPopMatrix();
 
-	hand();
+	/*hand();*/
 
 }
 //--------------------------------------------------------------------
@@ -646,7 +758,7 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE, LPSTR, int nCmdShow)
 	if (!RegisterClassEx(&wc)) return false;
 
 	HWND hWnd = CreateWindow(WINDOW_TITLE, WINDOW_TITLE, WS_OVERLAPPEDWINDOW,
-		CW_USEDEFAULT, CW_USEDEFAULT, 600, 600,
+		CW_USEDEFAULT, CW_USEDEFAULT, 1000, 1000,
 		NULL, NULL, wc.hInstance, NULL);
 
 	//--------------------------------

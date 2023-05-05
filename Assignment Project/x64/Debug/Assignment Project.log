@@ -170,87 +170,80 @@ C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cp
 C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(427,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
 C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(428,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
 C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(429,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(433,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(434,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(435,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(436,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(433,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(434,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(435,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(436,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
 C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(440,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
 C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(441,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
 C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(442,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
 C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(443,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(447,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(448,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(449,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(450,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(502,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(503,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(507,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(508,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(509,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(510,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(514,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(515,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(516,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(520,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(521,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(522,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(527,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(528,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(531,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(532,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(533,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(534,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(537,2): error C3861: 'firstFinger': identifier not found
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(539,2): error C3861: 'secondFinger': identifier not found
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(541,2): error C3861: 'thirdFinger': identifier not found
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(543,2): error C3861: 'fourthFinger': identifier not found
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(550,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(551,34): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(551,20): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(552,47): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(552,34): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(552,20): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(553,41): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(553,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(556,34): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(557,20): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(558,41): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(558,20): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(559,47): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(559,34): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(562,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(564,35): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(565,41): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(565,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(568,34): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(568,20): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(569,20): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(570,41): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(570,20): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(571,47): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(571,34): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(571,20): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(574,41): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(574,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(575,47): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(575,34): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(575,20): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(576,41): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(576,20): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(577,35): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(580,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(581,34): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(581,20): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(582,40): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(588,26): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(590,26): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(592,26): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(596,26): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(598,26): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(600,26): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(604,26): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(606,26): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(608,26): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(612,26): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(614,26): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(616,26): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(447,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(448,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(449,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(450,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(454,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(455,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(456,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(457,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(461,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(462,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(463,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(464,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(468,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(469,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(470,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(471,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(475,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(476,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(477,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(478,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(482,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(483,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(484,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(485,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(489,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(490,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(491,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(492,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(500,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(501,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(503,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(504,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(506,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(507,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(509,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(510,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(512,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(513,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(515,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(516,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(518,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(519,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(521,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(522,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(524,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(525,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(527,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(528,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(530,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(531,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(533,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(534,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(536,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(537,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(539,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(540,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(542,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(543,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(545,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(546,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(548,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(549,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(551,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(552,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(554,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(555,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(557,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(558,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+  Assignment Project.vcxproj -> C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\x64\Debug\Assignment Project.exe
