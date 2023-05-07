@@ -839,6 +839,47 @@ void Lowerchest() {
 	glEnd();
 }
 
+void Upperstomach() {
+	glBegin(GL_QUADS);
+	glColor3f(0.5, 0.5, 0.5);
+	//top
+	glVertex3f(1.0, 1.5, 1.0);
+	glVertex3f(1.0, 1.5, -1.0);
+	glVertex3f(-1.0, 1.5, -1.0);
+	glVertex3f(-1.0, 1.5, 1.0);
+
+	//bottom
+	glVertex3f(0.75, 1.0, 1.0);
+	glVertex3f(0.75, 1.0, -1.0);
+	glVertex3f(-0.75, 1.0, -1.0);
+	glVertex3f(-0.75, 1.0, 1.0);
+
+	//front
+	glVertex3f(1.0, 1.5, 1.0);
+	glVertex3f(-1.0, 1.5, 1.0);
+	glVertex3f(-0.75, 1.0, 1.0);
+	glVertex3f(0.75, 1.0, 1.0);
+
+	//back
+	glVertex3f(1.0, 1.5, -1.0);
+	glVertex3f(-1.0, 1.5, -1.0);
+	glVertex3f(-0.75, 1.0, -1.0);
+	glVertex3f(-0.75, 1.0, -1.0);
+
+	//left
+	glVertex3f(-1.0, 1.5, 1.0);
+	glVertex3f(-1.0, 1.5, -1.0);
+	glVertex3f(-0.75, 1.0, -1.0);
+	glVertex3f(-0.75, 1.0, 1.0);
+
+	//right
+	glVertex3f(1.0, 1.5, 1.0);
+	glVertex3f(1.0, 1.5, -1.0);
+	glVertex3f(0.75, 1.0, -1.0);
+	glVertex3f(0.75, 1.0, 1.0);
+	glEnd();
+}
+
 void projection() {
 	glMatrixMode(GL_PROJECTION);		// refer to projection matrix
 	glLoadIdentity();					// reset the projection matrix
@@ -870,8 +911,8 @@ void display()
 	glRotatef(rotate_left_right, 0.0, 1.0, 0.0);
 
 	glPushMatrix();		//P2
-	glTranslatef(-0.7, 2.5, -0.5);
-	glScaled(3.5, 3.5, 3.5);
+	glTranslatef(-0.75, 2.55, -0.6);
+	glScaled(4.0, 4.0, 4.0);
 	Head();
 	glPopMatrix();		//P2
 
@@ -885,6 +926,11 @@ void display()
 	glTranslatef(0.0, -1.2, 0.0);
 	Lowerchest();
 	glPopMatrix();		//P4
+
+	glPushMatrix();		//P5
+	glTranslatef(0.0, -1.2, 0.0);
+	Upperstomach();
+	glPopMatrix();		//P5
 
 	//glPushMatrix();		
 	//glTranslatef(3.0, 0.0, 0.0);

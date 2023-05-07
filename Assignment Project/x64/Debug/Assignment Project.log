@@ -316,7 +316,8 @@ C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cp
 C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(670,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
 C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(672,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
 C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(673,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(873,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(879,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(885,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(914,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(920,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(926,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\Source.cpp(931,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
   Assignment Project.vcxproj -> C:\Users\Admin\Desktop\Tar UC\Code\Assignment-Robot\Assignment Project\x64\Debug\Assignment Project.exe
