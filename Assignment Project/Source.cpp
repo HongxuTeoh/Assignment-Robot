@@ -21,7 +21,9 @@ float PI = 3.1415926;
 float up_down = 0.0;
 float rotate_left_right = 0.0;
 
-float posD[] = { 0.4,0.8,-0.8 };//pos(0.8,0.0,0.0) right side of the sphere;
+float x = 0.0, y = 0.8, z = 0.0;
+
+float posD[] = { x,y,z };	//pos(0.0,0.8,0.0) top of the sphere;
 float dif[] = { 0.502,0.502,0.502 };//green color diffuse light
 
 float Waist[] = { 0.502,0.502,0.502 };
@@ -33,6 +35,8 @@ float LowerLeg[] = { 0.1961,0,0 };
 
 float BACKFEET[] = { 0.502,0.502,0.502 };
 float FRONTFEET[] = { 0,0,0 };
+
+float turn_body = 0.0;
 
 LRESULT WINAPI WindowProcedure(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 {
@@ -62,20 +66,35 @@ LRESULT WINAPI WindowProcedure(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam
 			rotate_left_right -= 1.0;
 
 		else if (wParam == 'W')
-			pty += 1.0;
+			pty += 0.1;
 		else if (wParam == 'S')
-			pty -= 1.0;
+			pty -= 0.1;
 		else if (wParam == 'A')
-			ptx -= 1.0;
+			ptx -= 0.1;
 		else if (wParam == 'D')
-			ptx += 1.0;
+			ptx += 0.1;
 		else if (wParam == 'Q')
 			pry += 1.0;
 		else if (wParam == 'E')
 			pry -= 1.0;
 
-			
+		else if (wParam == 'U')
+			posD[1] += 0.1;
+		else if (wParam == 'J')
+			posD[1] -= 0.1;
+		else if (wParam == 'H')
+			posD[0] -= 0.1;
+		else if (wParam == 'K')
+			posD[0] += 0.1;
+		else if (wParam == 'I')
+			posD[2] += 0.1;
+		else if (wParam == 'Y')
+			posD[2] -= 0.1;
 
+		else if (wParam == 'N')
+			turn_body += 1.0;
+		else if (wParam == 'M')
+			turn_body -= 1.0;
 		break;
 
 	default:
@@ -1565,7 +1584,6 @@ void drawRedCircle(float radius, float x, float y, float z) {
 	glEnd();
 }
 
-
 void weapon() {
 	glPushMatrix();
 	glTranslatef(5.0, 3.0, 0.0);
@@ -1575,11 +1593,11 @@ void weapon() {
 	glPopMatrix();
 
 	glPushMatrix();
-	drawRedCircle(0.3, 0.0, 2.0, -0.1);
-	drawRedCircle(0.3, 0.0, 2.0, 0.1);
-
-	glPushMatrix();
 	glTranslatef(5.0, 3.0, 0.0);
+	
+	drawRedCircle(0.3, 0.0, 3.0, -0.1);
+	drawRedCircle(0.3, 0.0, 3.0, 0.1);
+	glPushMatrix();
 	glScalef(1.0, 1.5, 1.0);
 	glBegin(GL_QUADS);
 	glColor3f(0.0, 0.0, 0.5451);
@@ -1692,7 +1710,7 @@ void projection() {
 	else {
 		//Perspective view
 		gluPerspective(50.0, 1.0, 10, -0.01);
-		glFrustum(-10.0, 10.0, -10.0, 10.0, 1, 50.0);
+		glFrustum(-2, 2.0, -2.0, 2.0, 1, 50.0);
 	}
 }
 
@@ -1724,6 +1742,10 @@ void display()
 	glTranslatef(0.0, up_down, 0.0);
 	glRotatef(rotate_left_right, 0.0, 1.0, 0.0);
 
+	/*------------------------------------------------*/
+	glPushMatrix();
+	glRotatef(turn_body, 0.0, 1.0, 0.0);
+	
 	glPushMatrix();		//P8
 	glTranslatef(0.0, 0.7, 0.0);
 	glScalef(1.0, 1.0, 0.64);
@@ -1758,12 +1780,7 @@ void display()
 
 	glPopMatrix();		//P8
 
-	glPushMatrix();		//P7
-	glTranslatef(-0.6, -0.87, -0.64);
-	glScalef(2.5, 2.5, 2.5);
-	LowerBody();
-	glPopMatrix();		//P7
-
+	/*---------------------------------*/
 	glPushMatrix();		//P9
 	glTranslated(1.8, 2.5, 0.0);
 	joint();
@@ -1831,7 +1848,16 @@ void display()
 	glScalef(0.5, 0.5, 0.5);
 	Hand();
 	glPopMatrix();		//P14
+	/*----------------------------------------------*/
+	glPopMatrix();
+	/*----------------------------------------------*/
 	
+	glPushMatrix();		//P7
+	glTranslatef(-0.6, -0.87, -0.64);
+	glScalef(2.5, 2.5, 2.5);
+	LowerBody();
+	glPopMatrix();		//P7
+
 	glPushMatrix();
 	weapon();
 	glPopMatrix();
