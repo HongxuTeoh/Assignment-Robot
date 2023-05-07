@@ -120,7 +120,455 @@ void projection() {
 }
 
 // robot head and neck
+void Head() {
+	glColor3ub(128, 128, 128);	//GREY COLOR
+	glBegin(GL_POLYGON);		//FRONT FACE
+	glVertex3f(0, 0, 0);
+	glVertex3f(0.4, 0, 0);
+	glVertex3f(0.4, 0.2, 0);
+	glVertex3f(0, 0.2, 0);
+	glEnd();
 
+	glBegin(GL_POLYGON);       //LEFT FACE
+	glVertex3f(0, 0, 0);
+	glVertex3f(0, 0.2, 0);
+	glVertex3f(0, 0.2, 0.3);
+	glVertex3f(0, 0, 0.3);
+	glEnd();
+
+	glBegin(GL_POLYGON);       //RIGHT FACE
+	glVertex3f(0.4, 0, 0);
+	glVertex3f(0.4, 0.2, 0);
+	glVertex3f(0.4, 0.2, 0.3);
+	glVertex3f(0.4, 0, 0.3);
+	glEnd();
+
+	glBegin(GL_POLYGON);      //BACK FACE
+	glVertex3f(0, 0, 0.3);
+	glVertex3f(0.4, 0, 0.3);
+	glVertex3f(0.4, 0.2, 0.3);
+	glVertex3f(0, 0.2, 0.3);
+	glEnd();
+
+	glBegin(GL_POLYGON);		//TOP FACE 
+	glVertex3f(0, 0.2, 0);
+	glVertex3f(0.4, 0.2, 0);
+	glVertex3f(0.4, 0.2, 0.3);
+	glVertex3f(0, 0.2, 0.3);
+	glEnd();
+
+	glBegin(GL_POLYGON);		//DOWN FACE
+	glVertex3f(0, 0, 0);
+	glVertex3f(0.4, 0, 0);
+	glVertex3f(0.4, 0, 0.3);
+	glVertex3f(0, 0, 0.3);
+	glEnd();
+
+	glColor3ub(255, 215, 0);	//GOLD COLOR FOR CROWN
+	glBegin(GL_POLYGON);		//FRONT CROWN FACE
+	glVertex3f(0, 0.2, 0);
+	glVertex3f(0.4, 0.2, 0);
+	glVertex3f(0.4, 0.22, 0);
+	glVertex3f(0, 0.22, 0);
+	glEnd();
+
+	glBegin(GL_POLYGON);		//BACK CROWN FACE
+	glVertex3f(0, 0.2, 0.3);
+	glVertex3f(0.4, 0.2, 0.3);
+	glVertex3f(0.4, 0.22, 0.3);
+	glVertex3f(0, 0.22, 0.3);
+	glEnd();
+
+	glBegin(GL_POLYGON);		//LEFT CROWN FACE
+	glVertex3f(0, 0.2, 0);
+	glVertex3f(0, 0.22, 0);
+	glVertex3f(0, 0.22, 0.3);
+	glVertex3f(0, 0.2, 0.3);
+	glEnd();
+
+	glBegin(GL_POLYGON);		//RIGHT CROWN FACE
+	glVertex3f(0.4, 0.2, 0);
+	glVertex3f(0.4, 0.22, 0);
+	glVertex3f(0.4, 0.22, 0.3);
+	glVertex3f(0.4, 0.2, 0.3);
+	glEnd();
+
+	glColor3b(0, 0, 0);			//BLACK COLOR OUTLINE
+	glLineWidth(1.5);
+	glBegin(GL_LINE_LOOP);		//FRONT CROWN FACE OUTLINE
+	glVertex3f(0, 0.2, -0.00001);
+	glVertex3f(0.4, 0.2, -0.00001);
+	glVertex3f(0.4, 0.22, -0.00001);
+	glVertex3f(0, 0.22, -0.00001);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);		//BACK CROWN FACE OUTLINE
+	glVertex3f(0, 0.2, 0.30001);
+	glVertex3f(0.4, 0.2, 0.30001);
+	glVertex3f(0.4, 0.22, 0.30001);
+	glVertex3f(0, 0.22, 0.30001);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);		//LEFT CROWN FACE OUTLINE
+	glVertex3f(-0.00001, 0.2, 0);
+	glVertex3f(-0.00001, 0.22, 0);
+	glVertex3f(-0.00001, 0.22, 0.3);
+	glVertex3f(-0.00001, 0.2, 0.3);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);		//RIGHT CROWN FACE OUTLINE
+	glVertex3f(0.40001, 0.2, 0);
+	glVertex3f(0.40001, 0.22, 0);
+	glVertex3f(0.40001, 0.22, 0.3);
+	glVertex3f(0.40001, 0.2, 0.3);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);		//FRONT FACE OUTLINE
+	glVertex3f(0, 0, -0.00001);
+	glVertex3f(0.4, 0, -0.00001);
+	glVertex3f(0.4, 0.2, -0.00001);
+	glVertex3f(0, 0.2, -0.00001);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);		//LEFT FACE OUTLINE
+	glVertex3f(-0.00001, 0, 0);
+	glVertex3f(-0.00001, 0.2, 0);
+	glVertex3f(-0.00001, 0.2, 0.3);
+	glVertex3f(-0.00001, 0, 0.3);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);		//RIGHT FACE OUTLINE
+	glVertex3f(0.40001, 0, 0);
+	glVertex3f(0.40001, 0.2, 0);
+	glVertex3f(0.40001, 0.2, 0.3);
+	glVertex3f(0.40001, 0, 0.3);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);		//BACK FACE OUTLINE
+	glVertex3f(0, 0, 0.30001);
+	glVertex3f(0.4, 0, 0.30001);
+	glVertex3f(0.4, 0.2, 0.30001);
+	glVertex3f(0, 0.2, 0.30001);
+	glEnd();
+
+	glColor3b(0, 0, 0);
+	glBegin(GL_TRIANGLES);	//LEFT EYE	
+	glVertex3f(0.07, 0.07, -0.001);
+	glVertex3f(0.09, 0.12, -0.001);
+	glVertex3f(0.14, 0.06, -0.001);
+	glEnd();
+
+	glBegin(GL_TRIANGLES);	//RIGHT EYE
+	glVertex3f(0.33, 0.07, -0.001);
+	glVertex3f(0.31, 0.12, -0.001);
+	glVertex3f(0.26, 0.06, -0.001);
+	glEnd();
+
+	glColor3ub(255, 215, 0);//GOLD COLOR CROWN
+	glBegin(GL_TRIANGLES);//FRONT CROWN
+	glVertex3f(0, 0.22, 0);
+	glVertex3f(0.05, 0.22, 0);
+	glVertex3f(0.025, 0.26, 0);
+	glEnd();
+	glBegin(GL_TRIANGLES);//FRONT CROWN
+	glVertex3f(0.05, 0.22, 0);
+	glVertex3f(0.1, 0.22, 0);
+	glVertex3f(0.075, 0.26, 0);
+	glEnd();
+	glBegin(GL_TRIANGLES);//FRONT CROWN
+	glVertex3f(0.1, 0.22, 0);
+	glVertex3f(0.15, 0.22, 0);
+	glVertex3f(0.125, 0.26, 0);
+	glEnd();
+	glBegin(GL_TRIANGLES);//FRONT CROWN
+	glVertex3f(0.15, 0.22, 0);
+	glVertex3f(0.2, 0.22, 0);
+	glVertex3f(0.175, 0.26, 0);
+	glEnd();
+	glBegin(GL_TRIANGLES);//FRONT CROWN
+	glVertex3f(0.2, 0.22, 0);
+	glVertex3f(0.25, 0.22, 0);
+	glVertex3f(0.225, 0.26, 0);
+	glEnd();
+	glBegin(GL_TRIANGLES);//FRONT CROWN
+	glVertex3f(0.25, 0.22, 0);
+	glVertex3f(0.3, 0.22, 0);
+	glVertex3f(0.275, 0.26, 0);
+	glEnd();
+	glBegin(GL_TRIANGLES);//FRONT CROWN
+	glVertex3f(0.3, 0.22, 0);
+	glVertex3f(0.35, 0.22, 0);
+	glVertex3f(0.325, 0.26, 0);
+	glEnd();
+	glBegin(GL_TRIANGLES);//FRONT CROWN
+	glVertex3f(0.35, 0.22, 0);
+	glVertex3f(0.4, 0.22, 0);
+	glVertex3f(0.375, 0.26, 0);
+	glEnd();
+
+	glBegin(GL_TRIANGLES);//RIGHT CROWN
+	glVertex3f(0.4, 0.22, 0);
+	glVertex3f(0.4, 0.22, 0.05);
+	glVertex3f(0.4, 0.26, 0.025);
+	glEnd();
+	glBegin(GL_TRIANGLES);//RIGHT CROWN
+	glVertex3f(0.4, 0.22, 0.05);
+	glVertex3f(0.4, 0.22, 0.1);
+	glVertex3f(0.4, 0.26, 0.075);
+	glEnd();
+	glBegin(GL_TRIANGLES);//RIGHT CROWN
+	glVertex3f(0.4, 0.22, 0.1);
+	glVertex3f(0.4, 0.22, 0.15);
+	glVertex3f(0.4, 0.26, 0.125);
+	glEnd();
+	glBegin(GL_TRIANGLES);//RIGHT CROWN
+	glVertex3f(0.4, 0.22, 0.15);
+	glVertex3f(0.4, 0.22, 0.2);
+	glVertex3f(0.4, 0.26, 0.175);
+	glEnd();
+	glBegin(GL_TRIANGLES);//RIGHT CROWN
+	glVertex3f(0.4, 0.22, 0.2);
+	glVertex3f(0.4, 0.22, 0.25);
+	glVertex3f(0.4, 0.26, 0.225);
+	glEnd();
+	glBegin(GL_TRIANGLES);//RIGHT CROWN
+	glVertex3f(0.4, 0.22, 0.25);
+	glVertex3f(0.4, 0.22, 0.3);
+	glVertex3f(0.4, 0.26, 0.275);
+	glEnd();
+
+	glBegin(GL_TRIANGLES);//BACK CROWN
+	glVertex3f(0, 0.22, 0.3);
+	glVertex3f(0.05, 0.22, 0.3);
+	glVertex3f(0.025, 0.26, 0.3);
+	glEnd();
+	glBegin(GL_TRIANGLES);//BACK CROWN
+	glVertex3f(0.05, 0.22, 0.3);
+	glVertex3f(0.1, 0.22, 0.3);
+	glVertex3f(0.075, 0.26, 0.3);
+	glEnd();
+	glBegin(GL_TRIANGLES);//BACK CROWN
+	glVertex3f(0.1, 0.22, 0.3);
+	glVertex3f(0.15, 0.22, 0.3);
+	glVertex3f(0.125, 0.26, 0.3);
+	glEnd();
+	glBegin(GL_TRIANGLES);//BACK CROWN
+	glVertex3f(0.15, 0.22, 0.3);
+	glVertex3f(0.2, 0.22, 0.3);
+	glVertex3f(0.175, 0.26, 0.3);
+	glEnd();
+	glBegin(GL_TRIANGLES);//BACK CROWN
+	glVertex3f(0.2, 0.22, 0.3);
+	glVertex3f(0.25, 0.22, 0.3);
+	glVertex3f(0.225, 0.26, 0.3);
+	glEnd();
+	glBegin(GL_TRIANGLES);//BACK CROWN
+	glVertex3f(0.25, 0.22, 0.3);
+	glVertex3f(0.3, 0.22, 0.3);
+	glVertex3f(0.275, 0.26, 0.3);
+	glEnd();
+	glBegin(GL_TRIANGLES);//BACK CROWN
+	glVertex3f(0.3, 0.22, 0.3);
+	glVertex3f(0.35, 0.22, 0.3);
+	glVertex3f(0.325, 0.26, 0.3);
+	glEnd();
+	glBegin(GL_TRIANGLES);//BACK CROWN
+	glVertex3f(0.35, 0.22, 0.3);
+	glVertex3f(0.4, 0.22, 0.3);
+	glVertex3f(0.375, 0.26, 0.3);
+	glEnd();
+
+	glBegin(GL_TRIANGLES);//LEFT CROWN
+	glVertex3f(0, 0.22, 0);
+	glVertex3f(0, 0.22, 0.05);
+	glVertex3f(0, 0.26, 0.025);
+	glEnd();
+	glBegin(GL_TRIANGLES);//LEFT CROWN
+	glVertex3f(0, 0.22, 0.05);
+	glVertex3f(0, 0.22, 0.1);
+	glVertex3f(0, 0.26, 0.075);
+	glEnd();
+	glBegin(GL_TRIANGLES);//LEFT CROWN
+	glVertex3f(0, 0.22, 0.1);
+	glVertex3f(0, 0.22, 0.15);
+	glVertex3f(0, 0.26, 0.125);
+	glEnd();
+	glBegin(GL_TRIANGLES);//LEFT CROWN
+	glVertex3f(0, 0.22, 0.15);
+	glVertex3f(0, 0.22, 0.2);
+	glVertex3f(0, 0.26, 0.175);
+	glEnd();
+	glBegin(GL_TRIANGLES);//LEFT CROWN
+	glVertex3f(0, 0.22, 0.2);
+	glVertex3f(0, 0.22, 0.25);
+	glVertex3f(0, 0.26, 0.225);
+	glEnd();
+	glBegin(GL_TRIANGLES);//LEFT CROWN
+	glVertex3f(0, 0.22, 0.25);
+	glVertex3f(0, 0.22, 0.3);
+	glVertex3f(0, 0.26, 0.275);
+	glEnd();
+
+	//THE HORN
+	glColor3f(1, 0, 0);
+	glLineWidth(3);
+	glBegin(GL_LINES);//LEFT TOP HORN
+	glVertex3f(0.08, 0.2, 0.15);
+	glVertex3f(0.01, 0.35, 0.15);
+	glEnd();
+	glBegin(GL_LINES);//RIGHT TOP HORN
+	glVertex3f(0.32, 0.2, 0.15);
+	glVertex3f(0.39, 0.35, 0.15);
+	glEnd();
+	glBegin(GL_LINES);//LEFT SIDE HORN
+	glVertex3f(0.4, 0.1, 0.15);
+	glVertex3f(0.5, 0.25, 0.15);
+	glEnd();
+	glBegin(GL_LINES);//RIGHT SIDE HORN
+	glVertex3f(0, 0.1, 0.15);
+	glVertex3f(-0.1, 0.25, 0.15);
+	glEnd();
+
+
+	//NECK
+	glColor3ub(128, 128, 128);
+	glBegin(GL_POLYGON);		//FIRST FRONT NECK
+	glVertex3f(0.1, 0, 0.05);
+	glVertex3f(0.3, 0, 0.05);
+	glVertex3f(0.3, -0.03, 0.05);
+	glVertex3f(0.1, -0.03, 0.05);
+	glEnd();
+
+	glBegin(GL_POLYGON);		//SECOND FRONT NECK
+	glVertex3f(0.15, -0.03, 0.1);
+	glVertex3f(0.25, -0.03, 0.1);
+	glVertex3f(0.25, -0.06, 0.1);
+	glVertex3f(0.15, -0.06, 0.1);
+	glEnd();
+
+	glBegin(GL_POLYGON);		//FIRST BACK NECK
+	glVertex3f(0.1, 0, 0.25);
+	glVertex3f(0.3, 0, 0.25);
+	glVertex3f(0.3, -0.03, 0.25);
+	glVertex3f(0.1, -0.03, 0.25);
+	glEnd();
+
+	glBegin(GL_POLYGON);		//SECOND BACK NECK
+	glVertex3f(0.15, -0.03, 0.2);
+	glVertex3f(0.25, -0.03, 0.2);
+	glVertex3f(0.25, -0.06, 0.2);
+	glVertex3f(0.15, -0.06, 0.2);
+	glEnd();
+
+	glBegin(GL_POLYGON);		//FIRST LEFT NECK
+	glVertex3f(0.1, 0, 0.05);
+	glVertex3f(0.1, -0.03, 0.05);
+	glVertex3f(0.1, -0.03, 0.25);
+	glVertex3f(0.1, 0, 0.25);
+	glEnd();
+
+	glBegin(GL_POLYGON);		//SECOND LEFT NECK
+	glVertex3f(0.15, -0.03, 0.1);
+	glVertex3f(0.15, -0.03, 0.2);
+	glVertex3f(0.15, -0.06, 0.2);
+	glVertex3f(0.15, -0.06, 0.1);
+	glEnd();
+
+	glBegin(GL_POLYGON);		//FIRST RIGHT NECK
+	glVertex3f(0.3, 0, 0.05);
+	glVertex3f(0.3, -0.03, 0.05);
+	glVertex3f(0.3, -0.03, 0.25);
+	glVertex3f(0.3, 0, 0.25);
+	glEnd();
+
+	glBegin(GL_POLYGON);		//SECOND RIGHT NECK
+	glVertex3f(0.25, -0.03, 0.1);
+	glVertex3f(0.25, -0.03, 0.2);
+	glVertex3f(0.25, -0.06, 0.2);
+	glVertex3f(0.25, -0.06, 0.1);
+	glEnd();
+
+	glBegin(GL_POLYGON);		//FIRST DOWN NECK
+	glVertex3f(0.1, -0.03, 0.05);
+	glVertex3f(0.3, -0.03, 0.05);
+	glVertex3f(0.3, -0.03, 0.25);
+	glVertex3f(0.1, -0.03, 0.25);
+	glEnd();
+
+	glBegin(GL_POLYGON);		//SECOND DOWN NECK
+	glVertex3f(0.15, -0.06, 0.1);
+	glVertex3f(0.25, -0.06, 0.1);
+	glVertex3f(0.25, -0.06, 0.2);
+	glVertex3f(0.15, -0.06, 0.2);
+	glEnd();
+
+	//NECK OUTLINE
+	glLineWidth(1.5);
+	glColor3f(0, 0, 0);
+	glBegin(GL_LINES);
+
+	glVertex3f(0.3, -0.03, 0.05);
+	glVertex3f(0.1, -0.03, 0.05);
+
+	glVertex3f(0.25, -0.06, 0.1);
+	glVertex3f(0.15, -0.06, 0.1);
+
+	glVertex3f(0.3, -0.03, 0.25);
+	glVertex3f(0.1, -0.03, 0.25);
+
+	glVertex3f(0.25, -0.06, 0.2);
+	glVertex3f(0.15, -0.06, 0.2);
+
+	glVertex3f(0.1, 0, 0.05);
+	glVertex3f(0.1, -0.03, 0.05);
+
+	glVertex3f(0.1, -0.03, 0.25);
+	glVertex3f(0.1, 0, 0.25);
+
+	glVertex3f(0.1, 0, 0.05);
+	glVertex3f(0.1, 0, 0.25);
+
+	glVertex3f(0.1, -0.03, 0.25);
+	glVertex3f(0.1, -0.03, 0.05);
+
+	glVertex3f(0.3, 0, 0.05);
+	glVertex3f(0.3, -0.03, 0.05);
+
+	glVertex3f(0.3, -0.03, 0.25);
+	glVertex3f(0.3, 0, 0.25);
+
+	glVertex3f(0.3, -0.03, 0.05);
+	glVertex3f(0.3, -0.03, 0.25);
+
+	glVertex3f(0.3, 0, 0.05);
+	glVertex3f(0.3, 0, 0.25);
+
+	glVertex3f(0.15, -0.03, 0.1);
+	glVertex3f(0.15, -0.03, 0.2);
+
+	glVertex3f(0.15, -0.06, 0.2);
+	glVertex3f(0.15, -0.06, 0.1);
+
+	glVertex3f(0.15, -0.06, 0.2);
+	glVertex3f(0.15, -0.03, 0.2);
+
+	glVertex3f(0.15, -0.03, 0.1);
+	glVertex3f(0.15, -0.06, 0.1);
+
+	glVertex3f(0.25, -0.03, 0.1);
+	glVertex3f(0.25, -0.03, 0.2);
+
+	glVertex3f(0.25, -0.06, 0.2);
+	glVertex3f(0.25, -0.06, 0.1);
+
+	glVertex3f(0.25, -0.06, 0.2);
+	glVertex3f(0.25, -0.03, 0.2);
+
+	glVertex3f(0.25, -0.03, 0.1);
+	glVertex3f(0.25, -0.06, 0.1);
+
+	glEnd();
+}
 
 
 // robot body
