@@ -309,39 +309,63 @@ void cubeFinger(float length, float height, float width) {
 	glBegin(GL_QUADS);		//bottom finger
 	glColor3f(0.5, 0.5, 0.5);
 	//bottom
+	glTexCoord2f(0.0, 0.0);
 	glVertex3f(length, height - 0.3, width);
+	glTexCoord2f(0.0, 1.0);
 	glVertex3f(length + 0.3, height - 0.3, width);
+	glTexCoord2f(1.0, 0.0);
 	glVertex3f(length + 0.3, height - 0.3, width - 0.3);
+	glTexCoord2f(1.0, 1.0);
 	glVertex3f(length, height - 0.3, width - 0.3);
 
 	//top
+	glTexCoord2f(0.0, 0.0);
 	glVertex3f(length, height - 0.3 + 0.3, width);
+	glTexCoord2f(0.0, 1.0);
 	glVertex3f(length + 0.3, height, width);
+	glTexCoord2f(1.0, 0.0);
 	glVertex3f(length + 0.3, height, width - 0.3);
+	glTexCoord2f(1.0, 1.0);
 	glVertex3f(length, height - 0.3 + 0.3, width - 0.3);
 
 	//near (x axis = length)
+	glTexCoord2f(0.0, 0.0);
 	glVertex3f(length, height - 0.3, width);
+	glTexCoord2f(0.0, 1.0);
 	glVertex3f(length, height, width);
+	glTexCoord2f(1.0, 0.0);
 	glVertex3f(length, height, width - 0.3);
+	glTexCoord2f(1.0, 1.0);
 	glVertex3f(length, height - 0.3, width - 0.3);
 
 	//far (x axis = length + 0.3)
+	glTexCoord2f(0.0, 0.0);
 	glVertex3f(length + 0.3, height - 0.3, width);
+	glTexCoord2f(0.0, 1.0);
 	glVertex3f(length + 0.3, height, width);
+	glTexCoord2f(1.0, 0.0);
 	glVertex3f(length + 0.3, height, width - 0.3);
+	glTexCoord2f(1.0, 1.0);
 	glVertex3f(length + 0.3, height - 0.3, width - 0.3);
 
 	//left (z axis = width - 0.3)
+	glTexCoord2f(0.0, 0.0);
 	glVertex3f(length, height - 0.3, width - 0.3);
+	glTexCoord2f(0.0, 1.0);
 	glVertex3f(length + 0.3, height - 0.3, width - 0.3);
+	glTexCoord2f(1.0, 0.0);
 	glVertex3f(length + 0.3, height, width - 0.3);
+	glTexCoord2f(1.0, 1.0);
 	glVertex3f(length, height, width - 0.3);
 
 	//right (z axis = width)
+	glTexCoord2f(0.0, 0.0);
 	glVertex3f(length, height - 0.3, width);
+	glTexCoord2f(0.0, 1.0);
 	glVertex3f(length + 0.3, height - 0.3, width);
+	glTexCoord2f(1.0, 0.0);
 	glVertex3f(length + height, 0.3, width);
+	glTexCoord2f(1.0, 1.0);
 	glVertex3f(length, height, width);
 	glEnd();
 	/*----------------------------------------*/
@@ -1957,7 +1981,7 @@ void display()
 
 	projection();
 
-	GLuint texArr[2];
+	GLuint texArr[1];
 
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
