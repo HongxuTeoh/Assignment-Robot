@@ -71,7 +71,6 @@ LRESULT WINAPI WindowProcedure(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam
 			PostQuitMessage(0);
 
 		else if (wParam == VK_SPACE) {
-			isOrtho = !isOrtho;
 			movelegR = 0;
 			movelegL = 0;
 			movefoward = 0.0;
@@ -109,9 +108,9 @@ LRESULT WINAPI WindowProcedure(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam
 		else if (wParam == 'D')
 			ptx += 0.1;
 		else if (wParam == 'Q')
-			pry += 1.0;
+			pry += 2.0;
 		else if (wParam == 'E')
-			pry -= 1.0;
+			pry -= 2.0;
 
 		else if (wParam == 'U')
 			posD[1] += 0.1;
@@ -309,39 +308,63 @@ void cubeFinger(float length, float height, float width) {
 	glBegin(GL_QUADS);		//bottom finger
 	glColor3f(0.5, 0.5, 0.5);
 	//bottom
+	glTexCoord2f(0.0, 0.0);
 	glVertex3f(length, height - 0.3, width);
+	glTexCoord2f(0.0, 1.0);
 	glVertex3f(length + 0.3, height - 0.3, width);
+	glTexCoord2f(1.0, 0.0);
 	glVertex3f(length + 0.3, height - 0.3, width - 0.3);
+	glTexCoord2f(1.0, 1.0);
 	glVertex3f(length, height - 0.3, width - 0.3);
 
 	//top
+	glTexCoord2f(0.0, 0.0);
 	glVertex3f(length, height - 0.3 + 0.3, width);
+	glTexCoord2f(0.0, 1.0);
 	glVertex3f(length + 0.3, height, width);
+	glTexCoord2f(1.0, 0.0);
 	glVertex3f(length + 0.3, height, width - 0.3);
+	glTexCoord2f(1.0, 1.0);
 	glVertex3f(length, height - 0.3 + 0.3, width - 0.3);
 
 	//near (x axis = length)
+	glTexCoord2f(0.0, 0.0);
 	glVertex3f(length, height - 0.3, width);
+	glTexCoord2f(0.0, 1.0);
 	glVertex3f(length, height, width);
+	glTexCoord2f(1.0, 0.0);
 	glVertex3f(length, height, width - 0.3);
+	glTexCoord2f(1.0, 1.0);
 	glVertex3f(length, height - 0.3, width - 0.3);
 
 	//far (x axis = length + 0.3)
-	glVertex3f(length + 0.3, height - 0.3, width);
 	glVertex3f(length + 0.3, height, width);
+	glTexCoord2f(1.0, 0.0);
+	glTexCoord2f(0.0, 0.0);
+	glVertex3f(length + 0.3, height - 0.3, width);
+	glTexCoord2f(0.0, 1.0);
 	glVertex3f(length + 0.3, height, width - 0.3);
+	glTexCoord2f(1.0, 1.0);
 	glVertex3f(length + 0.3, height - 0.3, width - 0.3);
 
 	//left (z axis = width - 0.3)
+	glTexCoord2f(0.0, 0.0);
 	glVertex3f(length, height - 0.3, width - 0.3);
+	glTexCoord2f(0.0, 1.0);
 	glVertex3f(length + 0.3, height - 0.3, width - 0.3);
+	glTexCoord2f(1.0, 0.0);
 	glVertex3f(length + 0.3, height, width - 0.3);
+	glTexCoord2f(1.0, 1.0);
 	glVertex3f(length, height, width - 0.3);
 
 	//right (z axis = width)
+	glTexCoord2f(0.0, 0.0);
 	glVertex3f(length, height - 0.3, width);
+	glTexCoord2f(0.0, 1.0);
 	glVertex3f(length + 0.3, height - 0.3, width);
+	glTexCoord2f(1.0, 0.0);
 	glVertex3f(length + height, 0.3, width);
+	glTexCoord2f(1.0, 1.0);
 	glVertex3f(length, height, width);
 	glEnd();
 	/*----------------------------------------*/
@@ -536,7 +559,7 @@ void Hand() {
 // robot head and neck
 void Head() {
 
-	glRotatef(NHead, x, y, z);
+	glRotatef(NHead, 0.1,0 , 0);
 	glRotatef(TurnHead, x, y, z);
 	glMaterialfv(GL_FRONT, GL_AMBIENT, Head1);
 	glColor3ub(128, 128, 128);	//GREY COLOR
@@ -1957,7 +1980,7 @@ void display()
 
 	projection();
 
-	GLuint texArr[2];
+	GLuint texArr[1];
 
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
