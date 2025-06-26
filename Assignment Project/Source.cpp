@@ -338,19 +338,19 @@ void cubeFinger(float length, float height, float width) {
 	glVertex3f(length, height - 0.3, width - 0.3);
 
 	//far (x axis = length + 0.3)
-<<<<<<< HEAD
+//<<<<<<< HEAD
 	glVertex3f(length + 0.3, height, width);
 	glTexCoord2f(1.0, 0.0);
 	glTexCoord2f(0.0, 0.0);
 	glVertex3f(length + 0.3, height - 0.3, width);
 	glTexCoord2f(0.0, 1.0);
-=======
+//=======
 	glTexCoord2f(0.0, 0.0);
 	glVertex3f(length + 0.3, height - 0.3, width);
 	glTexCoord2f(0.0, 1.0);
 	glVertex3f(length + 0.3, height, width);
 	glTexCoord2f(1.0, 0.0);
->>>>>>> 524ffa7221f60b0b49e8fe18f98c694c0df1d5bd
+//>>>>>>> 524ffa7221f60b0b49e8fe18f98c694c0df1d5bd
 	glVertex3f(length + 0.3, height, width - 0.3);
 	glTexCoord2f(1.0, 1.0);
 	glVertex3f(length + 0.3, height - 0.3, width - 0.3);
