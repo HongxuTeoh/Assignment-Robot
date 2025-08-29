@@ -1990,7 +1990,10 @@ void display()
 
 	GLuint texArr[1];
 
+
+
 	glMatrixMode(GL_MODELVIEW);
+	
 	glLoadIdentity();
 	glTranslatef(tx, 0.0, tz);
 
@@ -2218,7 +2221,7 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE, LPSTR, int nCmdShow)
 	if (!RegisterClassEx(&wc)) return false;
 
 	HWND hWnd = CreateWindow(WINDOW_TITLE, WINDOW_TITLE, WS_OVERLAPPEDWINDOW,
-		CW_USEDEFAULT, CW_USEDEFAULT, 600, 600,
+		10, 10, 600, 600,
 		NULL, NULL, wc.hInstance, NULL);
 
 	//--------------------------------
